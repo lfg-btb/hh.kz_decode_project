@@ -6,7 +6,7 @@ const path = require('path')
 let sequelize; 
 
 if(process.env.NODE_ENV === "production"){
-    console.log("Hello");
+    console.log(dbConf.production);
     sequelize = new Sequelize(dbConf.production.database, dbConf.production.username, dbConf.production.password, {
         host: dbConf.production.host,
         dialect: dbConf.production.dialect,
