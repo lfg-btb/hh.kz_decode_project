@@ -3,7 +3,7 @@ const app = express()
 const logger = require('morgan')
 const passport = require('passport')
 
-const PORT = 8000;
+const PORT = 8001;
 
 app.use(logger('dev')) // считывание и вывод запроса в консоль
 app.use(express.urlencoded())  // считывание данных запроса формата urlencoded
